@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chi tiết sản phẩm – ShopBot AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/main.css">
+<link rel="stylesheet" href="/static/css/product_detail.css">
+</head>
+<body class="product-page">
+
+<header class="detail-topbar">
+  <a href="/" class="back-btn">← Quay lại Chat</a>
+  <div class="logo">ShopBot<span class="logo-ai">AI</span></div>
+</header>
+
+<main class="detail-main" id="detailMain">
+  <div class="loading-state">
+    <div class="spinner"></div>
+    <p>Đang tải thông tin sản phẩm...</p>
+  </div>
+</main>
+
+<!-- Floating Chat Button -->
+<button class="float-chat-btn" id="floatChatBtn" onclick="window.location.href='/'">
+  Tiếp tục chat
+</button>
+
+<script>
+const productId = "{{ product_id }}";
+</script>
+<script src="/static/js/utils.js"></script>
+<script src="/static/js/product_detail.js"></script>
+</body>
+</html>

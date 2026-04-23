@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thống kê – ShopBot AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/main.css">
+<link rel="stylesheet" href="/static/css/analytics.css">
+</head>
+<body class="analytics-page">
+
+<header class="detail-topbar">
+  <a href="/" class="back-btn">← Quay lại Chat</a>
+  <div class="logo">ShopBot<span class="logo-ai">AI</span></div>
+</header>
+
+<main class="analytics-main">
+  <div class="analytics-header">
+    <h1>Thống kê &amp; Phân tích</h1>
+    <p>Dữ liệu sử dụng và hiệu quả hệ thống</p>
+  </div>
+
+  <div class="stats-grid" id="statsGrid">
+    <div class="stat-card" id="totalSearches">
+      <div class="stat-value">–</div>
+      <div class="stat-label">Tổng tìm kiếm</div>
+    </div>
+    <div class="stat-card" id="totalProducts">
+      <div class="stat-value">–</div>
+      <div class="stat-label">Sản phẩm trong DB</div>
+    </div>
+    <div class="stat-card" id="totalPlatforms">
+      <div class="stat-value">3</div>
+      <div class="stat-label">Sàn giả lập</div>
+    </div>
+    <div class="stat-card" id="totalCategories">
+      <div class="stat-value">–</div>
+      <div class="stat-label">Danh mục sản phẩm</div>
+    </div>
+  </div>
+
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3>Danh mục tìm kiếm nhiều nhất</h3>
+      <div id="categoryChart" class="bar-chart"></div>
+    </div>
+    <div class="chart-card">
+      <h3>Phân bố mức giá quan tâm</h3>
+      <div id="priceChart" class="bar-chart"></div>
+    </div>
+    <div class="chart-card">
+      <h3>Sản phẩm theo sàn</h3>
+      <div id="platformChart" class="donut-chart"></div>
+    </div>
+    <div class="chart-card">
+      <h3>Sản phẩm theo danh mục</h3>
+      <div id="productCatChart" class="bar-chart"></div>
+    </div>
+  </div>
+</main>
+
+<script src="/static/js/utils.js"></script>
+<script src="/static/js/analytics.js"></script>
+</body>
+</html>
